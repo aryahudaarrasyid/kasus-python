@@ -1,0 +1,5 @@
+txt = input()
+text = txt.split()
+for i in text:
+    if len(i) == len(max(text, key=len)):
+        print(i)
