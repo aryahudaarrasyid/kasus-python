@@ -1,0 +1,15 @@
+file = open("/usercode/files/books.txt", "r")
+
+#your code goes here
+data = file.readlines()
+panjang = len(data)
+for i in range(panjang):
+    strukturhuruf = data[i][0]
+    strukturangka = len(data[i])
+    if i == panjang - 1:
+        print(strukturhuruf + str(strukturangka))
+    else:
+        print(strukturhuruf + str(strukturangka - 1))
+
+
+file.close()
